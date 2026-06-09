@@ -1,0 +1,25 @@
+Package: immr
+Title: Helper Tools for a Short Course on Multi-Level and Mixed-Effects Models
+Version: 0.1.0
+Authors@R:
+    person("Mark", "Andrews", email = "mjandrews.org@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides helper functions and utilities for a short training
+    course on multi-level models and mixed-effects models in R.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Imports:
+    lme4,
+    rlang,
+    tibble
+Suggests:
+    dplyr,
+    readr,
+    stringr,
+    usethis
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 8.0.0
+Config/roxygen2/version: 8.0.0
