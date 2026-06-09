@@ -109,7 +109,7 @@ binomial_model <- function(successes, trials, group = NULL, data = NULL,
       type       = "unpooled",
       conf_level = conf_level,
       estimates  = tibble::tibble(
-        group    = groups,
+        group    = as.character(groups),
         estimate = m_j / n_j,
         lower    = cis["lower", ],
         upper    = cis["upper", ]
