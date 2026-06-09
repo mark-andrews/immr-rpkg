@@ -1,3 +1,50 @@
+#' Mathematics achievement and school data (pupil level)
+#'
+#' Mathematics achievement scores and pupil background variables for 7,185
+#' pupils in 160 US high schools, from the High School and Beyond survey.
+#' The data are widely used as a teaching example for multilevel models with
+#' group-level predictors.
+#' The companion school-level dataset is \code{\link{mathachieveschool}}.
+#'
+#' @format A tibble with 7,185 rows and 6 columns:
+#' \describe{
+#'   \item{pupil}{Factor. Pupil identifier.}
+#'   \item{school}{Factor. School identifier.}
+#'   \item{minority}{Factor. Whether the pupil belongs to a minority group
+#'     (\code{Yes} or \code{No}).}
+#'   \item{sex}{Factor. Pupil sex (\code{Female} or \code{Male}).}
+#'   \item{ses}{Numeric. Pupil socioeconomic status (standardised composite).}
+#'   \item{mathach}{Numeric. Mathematics achievement score.}
+#' }
+#'
+#' @source Raudenbush, S.W. and Bryk, A.S. (2002). \emph{Hierarchical Linear
+#'   Models: Applications and Data Analysis Methods}, 2nd ed. Sage.
+"mathachieve"
+
+
+#' Mathematics achievement and school data (school level)
+#'
+#' School-level characteristics for the 160 US high schools in the High School
+#' and Beyond survey.
+#' The companion pupil-level dataset is \code{\link{mathachieve}}.
+#'
+#' @format A tibble with 160 rows and 7 columns:
+#' \describe{
+#'   \item{school}{Factor. School identifier.}
+#'   \item{size}{Integer. School enrolment.}
+#'   \item{sector}{Factor. School sector (\code{Catholic} or \code{Public}).}
+#'   \item{pracad}{Numeric. Proportion of pupils on an academic track.}
+#'   \item{disclim}{Numeric. Discrimination climate scale score.}
+#'   \item{himinty}{Factor. Whether the school has a high proportion of
+#'     minority pupils (\code{0} = no, \code{1} = yes).}
+#'   \item{meanses}{Numeric. Mean socioeconomic status of pupils in the school.}
+#' }
+#'
+#' @source Raudenbush, S.W. and Bryk, A.S. (2002). \emph{Hierarchical Linear
+#'   Models: Applications and Data Analysis Methods}, 2nd ed. Sage.
+"mathachieveschool"
+
+
 #' Rat tumour incidence data
 #'
 #' Tumour incidence in 71 groups (batches) of female lab rats from a study on
